@@ -1,0 +1,41 @@
+---
+layout: site/default
+---
+<div class="box" style="padding-top:8rem;">
+
+  {% capture post_image %}
+    {{ site.cdn }}{{ include.version }}work/Coca-Cola_FWC_14-w624h351.jpg
+  {% endcapture %}
+
+  {% include components/containers/card/special.html 
+    title="World Cup Brazil"
+    categories="Creative Direction, Film, Photography"
+    description= "description"
+    image=post_image
+  %}
+
+  {% include components/containers/card/special.html 
+    title="World Cup Brazil"
+    categories="Creative Direction, Film, Photography"
+    description= "description"
+    image=post_image
+    align="right"
+  %}
+
+  {% include components/containers/card/special.html 
+    title="World Cup Brazil"
+    categories="Creative Direction, Film, Photography"
+    description= "description"
+    url="https://work.diogorusso.com/fwc-2014-conteudo-multimidia-cobertura-coca-cola"
+    image=post_image
+  %}
+
+  {% include components/containers/card/special.html 
+    title="World Cup Brazil"
+    categories="Creative Direction, Film, Photography"
+    description= "description"
+    url="https://work.diogorusso.com/fwc-2014-conteudo-multimidia-cobertura-coca-cola"
+    image=post_image
+    align="right"
+  %}
+</div>
