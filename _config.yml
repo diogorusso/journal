@@ -7,7 +7,7 @@ baseurl: "/journal"
 #   sass_dir: _includes/
 #   style: :compressed
 #theme
-theme: "diogorusso.jekyll.theme"
+remote_theme: 'diogorusso/diogorusso.jekyll.theme'
 # remote_theme: 'diogorusso/diogorusso.jekyll.theme'
 paginate: 5
 plugins: [jekyll-paginate,jekyll-remote-theme]
