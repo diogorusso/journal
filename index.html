@@ -1,41 +1,15 @@
 ---
 layout: site/default
+scripts: "instagram"
 ---
-<div class="box" style="padding-top:8rem;">
-
-  {% capture post_image %}
-    {{ site.cdn }}{{ include.version }}work/Coca-Cola_FWC_14-w624h351.jpg
-  {% endcapture %}
-
-  {% include components/containers/card/special.html 
-    title="World Cup Brazil"
-    categories="Creative Direction, Film, Photography"
-    description= "description"
-    image=post_image
-  %}
-
-  {% include components/containers/card/special.html 
-    title="World Cup Brazil"
-    categories="Creative Direction, Film, Photography"
-    description= "description"
-    image=post_image
-    align="right"
-  %}
-
-  {% include components/containers/card/special.html 
-    title="World Cup Brazil"
-    categories="Creative Direction, Film, Photography"
-    description= "description"
-    url="https://work.diogorusso.com/fwc-2014-conteudo-multimidia-cobertura-coca-cola"
-    image=post_image
-  %}
-
-  {% include components/containers/card/special.html 
-    title="World Cup Brazil"
-    categories="Creative Direction, Film, Photography"
-    description= "description"
-    url="https://work.diogorusso.com/fwc-2014-conteudo-multimidia-cobertura-coca-cola"
-    image=post_image
-    align="right"
-  %}
-</div>
+{% include components/hero/minimal.html
+  title= "Diogo Russo"
+  subtitle= "Diogo is an expert designer, illustrator, and multimedia artist who has been running his own graphic design studio in Brazil for over 10 years. Some of his biggest clients include Coca-Cola, Red Bull and SC Johnson. He studied graphic design at PUC University in Rio de Janeiro. 👉"
+  bg_color="bg-light"
+  wrap="wrap-large"
+  txt_align="txt-left"
+  scroll_arrow="false"
+  anchor="journal"
+%}
+<a id="journal"></a>
+{% include content/work/portfolio.html %}

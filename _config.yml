@@ -3,12 +3,12 @@ url: https://www.diogorusso.com
 baseurl: "/journal"
 
 # Sass
-# sass:
-#   sass_dir: _includes/
-#   style: :compressed
+sass:
+  style: :compressed
 #theme
-remote_theme: 'diogorusso/diogorusso.jekyll.theme'
 # remote_theme: 'diogorusso/diogorusso.jekyll.theme'
+theme: "diogorusso.jekyll.theme"
+
 paginate: 5
 plugins: [jekyll-paginate,jekyll-remote-theme]
 
