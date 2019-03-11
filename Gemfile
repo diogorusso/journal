@@ -4,7 +4,7 @@ gem "rake"
 gem "github-pages", group: :jekyll_plugins
 gem "jekyll-remote-theme"
 gem "jekyll-paginate"
-gem "diogorusso.jekyll.theme", path: "../diogorusso.jekyll.theme"
+# gem "diogorusso.jekyll.theme", path: "../diogorusso.jekyll.theme"
 group :jekyll_plugins do
    gem "jekyll-feed"
 end
