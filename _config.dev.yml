@@ -3,3 +3,4 @@ baseurl: "/journal"
 cdn: /journal/assets/
 static: /journal/assets/
 theme: "diogorusso.jekyll.theme"
+remote_theme: ''
