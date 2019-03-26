@@ -1,1 +1,1 @@
-bundle exec jekyll serve --host=localhost --config "_config.yml,_config.dev.yml"
+bundle exec jekyll serve --host=localhost --port=4001 --config "_config.yml,_config.dev.yml"
