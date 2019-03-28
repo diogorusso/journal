@@ -7,7 +7,6 @@ sass:
   style: :compressed
 #theme
 remote_theme: 'diogorusso/diogorusso.jekyll.theme'
-# theme: "diogorusso.jekyll.theme"
 
 paginate: 5
 plugins: [jekyll-paginate,jekyll-remote-theme]
