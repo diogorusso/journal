@@ -30,8 +30,8 @@ description: "I'm a designer, artist and storyteller, an optimist dedicated to h
 keywords: "Diogo Russo, Product Desig, UX Design, Graphic Design, Visual Arts"
 
 # Media CDN (cloudinary)
-cdn: https://res.cloudinary.com/diogorusso/image/upload/
-static: 'https://res.cloudinary.com/diogorusso/raw/upload/'
+cdn: /journal/assets/
+static: /journal/assets/
 profile: about/bio/diogorusso.jpg
 icIco: favicon.ico #root folder
 icSvg: favicon.svg #root folder
@@ -87,31 +87,6 @@ exclude: [
   "reveal.js/LICENSE",
   "reveal.js/package.json"
 ]
-
-# Exclude
-exclude: [
-  gulpfile, 
-  package.json,
-  package-lock.json, 
-  node_modules,
-  Gemfile,
-  Gemfile.lock,
-  "LICENSE", 
-  README.md,
-  Rakefile
-  "assets/reveal.js/test",
-  "assets/reveal.js/index.html",
-  "assets/reveal.js/README.md",
-  "assets/reveal.js/bower.json",
-  "assets/reveal.js/Gruntfile.js",
-  "assets/reveal.js/CONTRIBUTING.md",
-  "assets/reveal.js/LICENSE",
-  "assets/reveal.js/package.json",
-  "assets/reveal.js/demo.html"
-  ]
-
-
-
 
 
 
