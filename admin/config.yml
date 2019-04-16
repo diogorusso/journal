@@ -30,7 +30,7 @@ collections: # A list of collections the CMS should be able to edit
     # PAGES
   - name: "page"
     label: "Page"
-    folder: "/"
+    folder: "./"
     sort: "title:asc"
     create: false
     slug: "{{slug}}"
