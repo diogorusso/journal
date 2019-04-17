@@ -3,7 +3,7 @@ backend:
   repo: diogorusso/journal
   branch: gh-pages
   api_root: https://api.github.com 
-  site_url: https://diogorussojournal.netlify.com/
+  site_url: https://diogorusso.github.io/journal
   logo_url: https://res.cloudinary.com/diogorusso/image/upload/v1523146945/favicons/icon-512x512.png
 media_folder: "assets/img/uploads"
 publish_mode: editorial_workflow
