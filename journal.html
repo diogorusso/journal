@@ -1,0 +1,12 @@
+---
+layout: site/sidebar
+---
+
+<!-- This loops through the paginated posts -->
+  {% for post in site.posts %}
+    <section style="padding-top: 4rem;padding-bottom: 4rem;">
+      <div class="box">
+        <h2><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h2>
+      </div>
+    </section>
+    {% endfor %}

@@ -5,7 +5,11 @@ backend:
   api_root: https://api.github.com 
   site_domain: diogorussojournal.netlify.com
   logo_url: https://res.cloudinary.com/diogorusso/image/upload/v1523146945/favicons/icon-512x512.png
-media_folder: "assets/img/uploads"
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: diogorusso
+    api_key: 539963394324974
 publish_mode: editorial_workflow
 
 # comment
@@ -21,7 +25,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: # The fields each document in this collection have
-      - {label: "Layout", name: "layout", widget: "hidden", default: "site/default"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "site/post"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - label: "Author"
         name: "author"
