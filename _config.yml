@@ -9,7 +9,7 @@ sass:
 remote_theme: 'diogorusso/diogorusso.jekyll.theme'
 
 paginate: 5
-plugins: [jekyll-paginate,jekyll-remote-theme]
+plugins: [jekyll-paginate,jekyll-remote-theme,jekyll-gist,jekyll-redirect-from]
 
 paginate_path: "/page:num/"
 
