@@ -2,14 +2,9 @@ backend:
   name: github
   repo: diogorusso/journal
   branch: gh-pages
-  # api_root: https://api.github.com
-  site_domain: https://diogorussojournal.netlify.com
-  # base_url: https://api.netlify.com
-  # auth_endpoint: auth
+  site-domain: https://diogorussojournal.netlify.com/
 media_folder: "assets/img/uploads"
 publish_mode: editorial_workflow
-
-
 
 collections: # A list of collections the CMS should be able to edit
   # POSTS
