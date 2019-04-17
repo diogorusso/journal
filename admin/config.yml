@@ -2,7 +2,6 @@ backend:
   name: github
   repo: diogorusso/journal
   branch: gh-pages
-  site-domain: https://diogorussojournal.netlify.com/
 media_folder: "assets/img/uploads"
 publish_mode: editorial_workflow
 
