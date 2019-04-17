@@ -4,6 +4,7 @@ backend:
   branch: gh-pages
   api_root: https://api.github.com 
   site_url: https://diogorussojournal.netlify.com/
+  logo_url: https://res.cloudinary.com/diogorusso/image/upload/v1523146945/favicons/icon-512x512.png
 media_folder: "assets/img/uploads"
 publish_mode: editorial_workflow
 
