@@ -2,9 +2,9 @@
 layout: site/default
 ---
 {% include components/hero/minimal.html
-  title= "Diogo Russo"
+  title= "<span class=\"hide-xs show-sm\">Diogo Russo</span><span class=\"hide-sm hide-md hide-lg hide-xl show-xs\">Diogo<br>Russo</span>"
   subtitle="UX & Product Design"
-  legend= "I build digital tools for farmers around the world at <strong>The Climate Corporation</strong>, San Francisco. Originally from Rio de Janeiro, Brazil,  I love bringing ideas to life and enjoy creating meaningful <span class=\"txt-rotate\" data-period=\"1000\" data-rotate=\"[ &quot;PRODUCTS&quot;, &quot;EXPERIENCES&quot;,&quot; MEMORIES&quot;, &quot; RELATIONSHIPS&quot;]\"><span class=\"wrap\">EXPERIENCES</span></span>"
+  legend= "building digital tools for farmers at <strong>climate.com</strong>"
   bg_color="bg-light"
   wrap="wrap-large"
   txt_align="txt-left"
@@ -14,6 +14,7 @@ layout: site/default
   anchor="journal"
 %}
 <a id="journal"></a>
+{% include content/bio/bio.html %}
 {% include content/process/process.html %}
 <br><br><br><br><br><br>
 
@@ -151,7 +152,7 @@ layout: site/default
 {% comment %} <br><br>
 {% include content/work/featured.html %} {% endcomment %}
 <br><br><br><br><br><br><br><br>
-{% include content/bio/profile.html %}
+
 
 
 
