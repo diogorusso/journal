@@ -20,12 +20,12 @@ scripts: instagram
 {% include content/process/process.html %}
 
 <div class="projects-climate">     
-        <div class="row portfolio-title">
+        {% comment %} <div class="row portfolio-title">
                 <div class="col-xs-12">
                 <h2>Digital Tools for Farmers</h2>
                 <h3>2016 - Now ∙ Product Designer at <a href="climate.com">Climate.com</a></h3>
                 </div>
-        </div>
+        </div> {% endcomment %}
         <section class="section-spacing">
                 <div class="box">
                         {% capture img_coca %}
@@ -71,12 +71,48 @@ scripts: instagram
         </section>
   </div>
 
-<div class="row portfolio-title">
-        <div class="col-xs-12">
-        <h2>Work & Play</h2>
-        <h3>I'm an an optimist dedicated to help bringing projects to life.I have fun making things and sharing ideas.</h3>
-        </div>
+  <div class="posts">
+        <section class="section-spacing">
+                <div class="box">
+                        <div class="row">
+                                <div class="col-xs-12">
+                                        <h1></h1>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-xs-12 col-md-4 col-lg-4" style="min-height:27rem; margin-bottom:2rem">
+                                        <div class="card" style="padding:2.5rem; position:realtive">
+                                                <h3 class="post" style="font-size:2rem; border-top: solid;padding-top:3rem;">Acessibility, Localization and Internationalization Best Practices</h3>
+                                                <small style="bottom: 2.5rem;position: absolute;right: 3rem;mfont-size: 1.1rem;font-weight: 300;">READ MORE</small>
+                                        </div>
+                                        
+                                </div>
+                                <div class="col-xs-12 col-md-4 col-lg-4" style="min-height:27rem; margin-bottom:2rem">
+                                        <div class="card" style="padding:2.5rem; position:realtive">
+                                                <h3 class="post" style="font-size:2rem; border-top: solid;padding-top:3rem;">UX Research, Storyboarding and Hypothesis Validation</h3>
+                                                <small style="bottom: 2.5rem;position: absolute;right: 3rem;mfont-size: 1.1rem;font-weight: 300;">READ MORE</small>
+                                        </div>
+                                        
+                                </div>
+                                <div class="col-xs-12 col-md-4 col-lg-4" style="min-height:27rem; margin-bottom:2rem">
+                                        <div class="card" style="padding:2.5rem; position:realtive">
+                                                <h3 class="post" style="font-size:2rem; border-top: solid;padding-top:3rem;">Design Systems, Styleguides and Components Library</h3>
+                                                <small style="bottom: 2.5rem;position: absolute;right: 3rem;mfont-size: 1.1rem;font-weight: 300;">READ MORE</small>
+                                        </div>
+                                        
+                                </div>
+                                
+                                
+                </div>
+        </section>
 </div>
+
+{% comment %} <div class="row portfolio-title">
+        <div class="col-xs-12">
+        <h2>Work, Learn & Play</h2>
+        <h3>Previous Work</h3>
+        </div>
+</div> {% endcomment %}
 
 <div class="projects-dmba"> 
         <section class="section-spacing">
@@ -110,6 +146,7 @@ scripts: instagram
 </div>
 
 
+
 <div class="projects-brazil">
         <section class="section-spacing">
                 <div class="box">
@@ -141,7 +178,50 @@ scripts: instagram
         </section> {% endcomment %}
 </div>
 
- <div class="projects-artwork">
+{% comment %} <div class="row portfolio-title">
+        <div class="col-xs-12">
+        <h2>Journal </h2>
+        <h3>Sometimes I write about design & development</h3>
+        </div>
+</div> {% endcomment %}
+
+ <div class="posts">
+        <section class="section-spacing">
+                <div class="box">
+                        <div class="row">
+                                <div class="col-xs-12">
+                                        <h1></h1>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-xs-12 col-md-4 col-lg-4" style="min-height:27rem; margin-bottom:2rem">
+                                        <div class="card" style="padding:2.5rem; position:realtive">
+                                                <h3 class="post" style="font-size:2rem; border-top: solid;padding-top:3rem;">Digital Prototyping Toolkit for Multi Platform Applications</h3>
+                                                <small style="bottom: 2.5rem;position: absolute;right: 3rem;mfont-size: 1.1rem;font-weight: 300;">READ MORE</small>
+                                        </div>
+                                        
+                                </div>
+                                <div class="col-xs-12 col-md-4 col-lg-4" style="min-height:27rem; margin-bottom:2rem">
+                                        <div class="card" style="padding:2.5rem; position:realtive">
+                                                <h3 class="post" style="font-size:2rem; border-top: solid;padding-top:3rem;">Design Thiking and Creative Problem Solving Methods</h3>
+                                                <small style="bottom: 2.5rem;position: absolute;right: 3rem;mfont-size: 1.1rem;font-weight: 300;">READ MORE</small>
+                                        </div>
+                                        
+                                </div>
+                                <div class="col-xs-12 col-md-4 col-lg-4" style="min-height:27rem; margin-bottom:2rem">
+                                        <div class="card" style="padding:2.5rem; position:realtive">
+                                                <h3 class="post" style="font-size:2rem; border-top: solid;padding-top:3rem;">Visual Note Taking and Project Documentation Strategies</h3>
+                                                <small style="bottom: 2.5rem;position: absolute;right: 3rem;mfont-size: 1.1rem;font-weight: 300;">READ MORE</small>
+                                        </div>
+                                        
+                                </div>
+                                
+                                
+                </div>
+        </section>
+</div>
+
+<div class="projects-artwork">
         <section class="section-spacing">
                 <div class="box">
                         {% capture img_coca %}
@@ -158,6 +238,41 @@ scripts: instagram
                 </div>
         </section>
 </div>
+
+
+{% comment %} 
+ <div class="toolkit">
+        <section class="section-spacing">
+                <div class="box">
+                        <div class="row">
+                                <div class="col-xs-12 col-md-6 col-lg-3">
+                                        <img style="max-height:8rem; width:auto"  src="https://cdn.freebiesupply.com/logos/large/2x/sketch-2-logo-png-transparent.png">
+                                </div>
+                                <div class="col-xs-12 col-md-6 col-lg-3 ">
+                                        <img style="max-height:8rem; width:auto" src="https://cdn.uigarage.net/wp-content/uploads/2018/12/12055852/figma-logo-300x300.png">
+                                </div>
+                                <div class="col-xs-12 col-md-6 col-lg-3">
+                                        <img style="max-height:8rem; width:auto" src="https://d33wubrfki0l68.cloudfront.net/c42e00332c3f61aba733f80b23e25f0f474b98c5/5a597/images/framer-x/framer-logo.png">
+                                </div>
+                                <div class="col-xs-12 col-md-6 col-lg-3">
+                                        <img style="max-height:8rem; width:auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/240px-Adobe_XD_CC_icon.svg.png">
+                                </div>
+                                <div class="col-xs-12 col-md-6 col-lg-3">
+                                        <img style="max-height:8rem; width:auto" src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png">
+                                </div>
+                                <div class="col-xs-12 col-md-6 col-lg-4">
+                                        <img style="max-height:8rem; width:auto" src="https://jekyllrb.com/img/octojekyll.png">
+                                </div>
+                                <div class="col-xs-12 col-md-6 col-lg-4">
+                                        <img style="max-height:8rem; width:auto" src="https://cdn1.macworld.co.uk/cmsdata/features/3608274/Terminalicon2_thumb800.png">
+                                </div>
+                               
+                        </div>
+                </div>
+        </section>
+</div> {% endcomment %}
+
+
 
 {% comment %} <br><br>
 {% include content/work/featured.html %} {% endcomment %}
