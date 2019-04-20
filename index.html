@@ -19,231 +19,28 @@ scripts: instagram
 
 {% include content/process/process.html %}
 
-<div class="projects-climate">     
-        {% comment %} <div class="row portfolio-title">
-                <div class="col-xs-12">
-                <h2>Digital Tools for Farmers</h2>
-                <h3>2016 - Now ∙ Product Designer at <a href="climate.com">Climate.com</a></h3>
-                </div>
-        </div> {% endcomment %}
-        <section class="section-spacing" style="padding-top:8rem;">
-                <div class="box">
-                        {% capture img_coca %}
-                        {{ site.cdn }}{{ include.version }}work/hero_SA2_1920-1080.png
-                        {% endcapture %}
-                        {% include components/card/large.html 
-                                url="https://work.diogorusso.com/fwc-2014-conteudo-multimidia-cobertura-coca-cola" 
-                                title="Predictive Seed Recommendations"
-                                subtitle="UX + Product Design A.I. Web Application - <a href=\"climate.com\">Seed Advisor</a>" 
-                                category="Creative Direction, Film, Photography" 
-                                image=img_coca 
-                        %}
-                </div>
-        </section>
-        
-        <section class="section-spacing">
-                <div class="box">
-                        {% capture img_lpc %}
-                        {{ site.cdn }}{{ include.version }}work/hero_RX2_1920-1080.png
-                        {% endcapture %}
-                        {% include components/card/large.html 
-                                url="https://work.diogorusso.com/launchpad" 
-                                title="Advanced Seed Prescriptions"
-                                subtitle="UX + UI Design - <a href=\"climate.com\">Fieldview Variable Rate</a> for Web, iOS and Android" 
-                                category="UI/UX, Product Design" 
-                                image=img_lpc 
-                        %}
-                </div>
-        </section>
-        <section class="section-spacing">
-                <div class="box">
-                        {% capture img_foodtopia %}
-                        {{ site.cdn }}{{ include.version }}work/hero_SYNC2_1920-1080.png
-                        {% endcapture %}
-                        {% include components/card/large.html 
-                                url="https://work.diogorusso.com/foodtopia" 
-                                title="Data Mule for Large Farming Operations"
-                                subtitle="UX + Product Design <a href=\"dmba\">FieldView Sync</a> iOS App" 
-                                category="Product Design"
-                                image=img_foodtopia 
-                        %}
-                </div>
-        </section>
-  </div>
+{% include content/work/newfeat.html%}
 
-  
 
-{% comment %} <div class="row portfolio-title">
-        <div class="col-xs-12">
-        <h2>Work, Learn & Play</h2>
-        <h3>Previous Work</h3>
-        </div>
-</div> {% endcomment %}
-
-<div class="projects-dmba"> 
-        <section class="section-spacing">
-                <div class="box">
-                        {% capture img_foodtopia %}
-                        {{ site.cdn }}{{ include.version }}work/projects/20160523_Launchpad_UX/cover.jpg
-                        {% endcapture %}
-                        {% include components/card/large.html 
-                                url="https://work.diogorusso.com/foodtopia" 
-                                title="Strategy & Experience Design at <a href=\"dmba\">DMBA</a>"
-                                subtitle="2014 -2016 ∙ MBA Design Stratregy at California College of the Arts" 
-                                category="UX & UI Design" 
-                                image=img_foodtopia 
-                        %}
-                </div>
-        </section>
-        {% comment %} <section class="section-spacing">
-                <div class="box">
-                        {% capture img_foodtopia %}
-                        {{ site.cdn }}{{ include.version }}work/projects/20160523_CCA_Foodtopia/cover.jpg
-                        {% endcapture %}
-                        {% include components/card/large.html 
-                                url="https://work.diogorusso.com/foodtopia" 
-                                title="Interactive Toolkit for Chefpreneurs"
-                                subtitle="UX & Strategy Design" 
-                                category="UI/UX and Product Design" 
-                                image=img_foodtopia 
-                        %}
-                </div>
-        </section> {% endcomment %}
-</div>
+{% include content/journal/posts.html %}
 
 
 
-<div class="projects-brazil">
-        <section class="section-spacing">
-                <div class="box">
-                        {% capture img_foodtopia %}
-                        {{ site.cdn }}{{ include.version }}work/projects/20160523_Coca-Cola_FWC2014/cover.jpg
-                        {% endcapture %}
-                        {% include components/card/large.html 
-                                url="https://work.diogorusso.com/foodtopia" 
-                                title="Graphics, Interaction & Motion Design"
-                                subtitle="2010 - 2014 ∙ Design Studio Co-Founder + Creative Director" 
-                                category="UI/UX and Product Design"
-                                image=img_foodtopia 
-                        %}
-                </div>
-        </section>  
-        
-        {% comment %} <section class="section-spacing">
-                <div class="box">
-                        {% capture img_foodtopia %}
-                        {{ site.cdn }}{{ include.version }}work/projects/20160523_Tocayo_Arts/16.jpg
-                        {% endcapture %}
-                        {% include components/card/large.html 
-                                url="https://work.diogorusso.com/foodtopia" 
-                                title="Community & Arts Projects" 
-                                subtitle="Cultural Production"
-                                image=img_foodtopia 
-                        %}
-                </div>
-        </section> {% endcomment %}
-</div>
 
-{% comment %} <div class="row portfolio-title">
+<div class="projects-artwork" style="margin-bottom:12rem;">
+                        <div class="box">
+                         <div class="row portfolio-title">
         <div class="col-xs-12">
         <h2>Journal </h2>
         <h3>Sometimes I write about design & development</h3>
         </div>
-</div> {% endcomment %}
-
-<div class="posts">
-        <section class="section-spacing">
-                <div class="box">
-                        <div class="row">
-                                <div class="col-xs-12">
-                                        <h1></h1>
-                                </div>
-                        </div>
-                        <div class="row">
-                                <div class="col-xs-12 col-md-4 col-lg-4" style="min-height:27rem; margin-bottom:2rem">
-                                        <div class="card" style="padding:2.5rem; position:realtive">
-                                                <h3 class="post" style="font-size:2rem; border-top: solid;padding-top:3rem;">Acessibility, Localization and Internationalization Best Practices</h3>
-                                                <small style="bottom: 2.5rem;position: absolute;right: 3rem;mfont-size: 1.1rem;font-weight: 300;">READ MORE</small>
-                                        </div>
-                                        
-                                </div>
-                                <div class="col-xs-12 col-md-4 col-lg-4" style="min-height:27rem; margin-bottom:2rem">
-                                        <div class="card" style="padding:2.5rem; position:realtive">
-                                                <h3 class="post" style="font-size:2rem; border-top: solid;padding-top:3rem;">UX Research, Storyboarding and Hypothesis Validation</h3>
-                                                <small style="bottom: 2.5rem;position: absolute;right: 3rem;mfont-size: 1.1rem;font-weight: 300;">READ MORE</small>
-                                        </div>
-                                        
-                                </div>
-                                <div class="col-xs-12 col-md-4 col-lg-4" style="min-height:27rem; margin-bottom:2rem">
-                                        <div class="card" style="padding:2.5rem; position:realtive">
-                                                <h3 class="post" style="font-size:2rem; border-top: solid;padding-top:3rem;">Design Systems, Styleguides and Components Library</h3>
-                                                <small style="bottom: 2.5rem;position: absolute;right: 3rem;mfont-size: 1.1rem;font-weight: 300;">READ MORE</small>
-                                        </div>
-                                        
-                                </div>
-                                
-                                
-                </div>
-        </section>
 </div>
-
- <div class="posts">
-        <section class="section-spacing">
-                <div class="box">
-                        <div class="row">
-                                <div class="col-xs-12">
-                                        <h1></h1>
-                                </div>
-                        </div>
-                        <div class="row">
-                                <div class="col-xs-12 col-md-4 col-lg-4" style="min-height:27rem; margin-bottom:2rem">
-                                        <div class="card" style="padding:2.5rem; position:realtive">
-                                                <h3 class="post" style="font-size:2rem; border-top: solid;padding-top:3rem;">Digital Prototyping Toolkit for Multi Platform Applications</h3>
-                                                <small style="bottom: 2.5rem;position: absolute;right: 3rem;mfont-size: 1.1rem;font-weight: 300;">READ MORE</small>
-                                        </div>
-                                        
-                                </div>
-                                <div class="col-xs-12 col-md-4 col-lg-4" style="min-height:27rem; margin-bottom:2rem">
-                                        <div class="card" style="padding:2.5rem; position:realtive">
-                                                <h3 class="post" style="font-size:2rem; border-top: solid;padding-top:3rem;">Design Thiking and Creative Problem Solving Methods</h3>
-                                                <small style="bottom: 2.5rem;position: absolute;right: 3rem;mfont-size: 1.1rem;font-weight: 300;">READ MORE</small>
-                                        </div>
-                                        
-                                </div>
-                                <div class="col-xs-12 col-md-4 col-lg-4" style="min-height:27rem; margin-bottom:2rem">
-                                        <div class="card" style="padding:2.5rem; position:realtive">
-                                                <h3 class="post" style="font-size:2rem; border-top: solid;padding-top:3rem;">Visual Note Taking and Project Documentation Strategies</h3>
-                                                <small style="bottom: 2.5rem;position: absolute;right: 3rem;mfont-size: 1.1rem;font-weight: 300;">READ MORE</small>
-                                        </div>
-                                        
-                                </div>
-                                
-                                
-                </div>
-        </section>
-        <div style="text-align:center;margin-bottom:4rem;">
-                <a href="{{site.url}}{{site.baseurl}}/projects.html" class="button" target="_blank" rel="noopener">read all articles</a>
-        </div>
-</div>
-
-
-
-<div class="projects-artwork">
-        <section class="section-spacing">
-                <div class="box">
-                        {% capture img_coca %}
-                        {{ site.cdn }}{{ include.version }}work/hero_Artwork_1920-1080.png
-                        {% endcapture %}
-                        {% include components/card/large.html 
-                                url="https://work.diogorusso.com/fwc-2014-conteudo-multimidia-cobertura-coca-cola" 
-                                title="Illustration & Artwork" 
-                                subtitle="Tropical Colors ∙ Vivid Forms ∙ Imaginative Shapes " 
-                                image=img_coca 
-                        %}
-                        <br><br><br><br><br><br><br><br>
                         {% include api/instagram/instagram.html %}
-                </div>
-        </section>
+                        <div class="more-projects" style="text-align:center;margin:3rem 0 4rem; width:100%">
+                              <a href="http://work.diogorusso.com/" class="button">explore all projects</a>
+                          </div>   
+                        
+                        </div>
 </div>
 
 
@@ -280,9 +77,6 @@ scripts: instagram
 </div> {% endcomment %}
 
 
-
-{% comment %} <br><br>
-{% include content/work/featured.html %} {% endcomment %}
 
 
 
