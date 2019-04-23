@@ -3,7 +3,7 @@ layout: site/default
 ---
 
 {% comment %} scripts: instagram {% endcomment %}
-
+<div class="rellax" data-rellax-speed="-8" data-rellax-zindex="1">
 {% include components/hero/minimal.html
   title= "<span class=\"hide-xs\">Diogo Russo</span><span class=\"hide-sm hide-md hide-lg hide-xl show-xs\">Diogo<br>Russo</span>"
   subtitle="UX & Product Design"
@@ -16,17 +16,21 @@ layout: site/default
   scroll_arrow="false"
   anchor="journal"
 %}
+</div>
+
+
+
 <a id="journal"></a>
-{% include content/bio/bio.html %}
-
-{% include content/process/process.html %}
-
-{% include content/work/newfeat.html%}
 
 
-{% include content/journal/posts.html %}
 
-
+<div class="rellax" data-rellax-speed="1" data-rellax-zindex="2">
+        {% include content/bio/bio.html %}
+        {% include content/process/process.html %}
+        
+        {% include content/work/newfeat.html%}
+        {% include content/journal/posts.html %}
+</div>
 
 
 {% comment %} <div class="projects-artwork" style="margin-bottom:12rem;">
