@@ -30,8 +30,8 @@ description: "I'm a designer, artist and storyteller, an optimist dedicated to h
 keywords: "Diogo Russo, Product Desig, UX Design, Graphic Design, Visual Arts"
 
 # Media CDN (cloudinary)
-cdn: /journal/assets/
-static: /journal/assets/
+cdn: /journal/assets/cdn/
+static: /journal/assets/cdn/
 profile: about/bio/diogorusso.jpg
 icIco: favicon.ico #root folder
 icSvg: favicon.svg #root folder

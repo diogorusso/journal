@@ -1,6 +1,6 @@
 url: ""
 baseurl: "/journal"
-cdn: /journal/assets/
-static: /journal/assets/
+cdn: /journal/assets/cdn/
+static: /journal/assets/cdn
 theme: "diogorusso.jekyll.theme"
 remote_theme: ''
