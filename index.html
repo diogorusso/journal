@@ -1,26 +1,49 @@
 ---
 layout: default
+title: Journal
 ---
+<div class="box" style="margin-top:6rem">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1 class="jumbo">Journal</h1>
+      <h2>Diogo Russo</h2>
+      <h3>Toolkit ・ Ideas ・ Learn </h3>
+      {% comment %} <h3><a href="">Toolkit</a> ・ <a href="">Ideas</a> ・ <a href="">Learn</a></h3> {% endcomment %}
+    </div>
+  </div>
+</div>
 
-{% comment %} scripts: instagram {% endcomment %}
-{% include components/hero/minimal.html
-  title= "<span class=\"hide-sm\">Diogo Russo</span><span class=\"hide-md hide-lg hide-xl show-xs\">Diogo<br>Russo</span>"
-  subtitle="UX & Product Design"
-  legend= "combining design, technology and agriculture to help farmers feed the world at  <strong>climate.com</strong>"
-  bg_color="bg-light"
-  wrap="wrap-large"
-  txt_align="txt-left"
-  txt_color="txt-dark"
-  title_size="jumbo"
-  scroll_arrow="false"
-  anchor="journal"
-%}
+<div class="box" style="margin-top:6rem">
+<div class="row">
+  <div class="col-xs-12">
+    <h1>
+      <span class="txt-rotate" data-period="1000" data-rotate="[ &quot;Comming Soon... &quot;, &quot; Come Back Later :) &quot;]"><span class="wrap">COMMING SOON...</span></span>
+    </h1>
+  </div>
+  {% comment %} {% capture img_foodtopia %}
+    {{ site.cdn }}{{ include.version }}featured/notebook.jpg
+  {% endcapture %}
+  {% include components/card/featured.html title="Getting Started with Python" img=img_foodtopia columns=6 categories="dev camp" %}
+  {% include components/card/featured.html title="Portfolio Workflow Automation" img=img_foodtopia columns=6 categories="design lab" %}
+  {% include components/card/featured.html title="hello" img=img_foodtopia columns=6 categories="art studio" %}
+  {% include components/card/featured.html title="hello" img=img_foodtopia columns=6 %}
+  {% include components/card/featured.html title="hello" img=img_foodtopia columns=6 %}
+  {% include components/card/featured.html title="hello" img=img_foodtopia columns=6 %}
+  {% include components/card/featured.html title="hello" img=img_foodtopia columns=6 %}
+  {% include components/card/featured.html title="hello" img=img_foodtopia columns=6 %} {% endcomment %}
+</div>
+</div>
 
-<a id="journal"></a>
-{% include content/bio/bio.html %}
-{% include content/process/process.html %}
-{% include featured.html %}
+{% comment %} {% include artwork.html %} {% endcomment %}
 {% comment %} {% include content/journal/posts.html %} {% endcomment %}
+
+
+
+
+
+
+
+
 
 
 
