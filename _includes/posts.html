@@ -1,76 +1,36 @@
-<div class="posts">
-        <section>
-                <div class="row posts-title">
-                        <div class="col-xs-12">
-                                <h2>Journal </h2>
-                                <h3>Sometimes I write about design & development</h3>
-                        </div>
-                </div>
-                <div class="box">
-                        <div class="row">
-                                <div class="col-xs-12">
-                                        <h1></h1>
-                                </div>
-                        </div>
-                        <div class="row">
-                                <div class="col-xs-12 col-md-6 col-lg-6 card-text">
-                                <a href="{{site.baseurl}}/test2.html">
-                                <div class="content-wrapper">
-                                        <h3>Acessibility, Localization and Internationalization Best Practices</h3>
-                                        <small>Read More</small>
-                                </div>
-                                </a>  
-                                </div>
-                                        <div class="col-xs-12 col-md-6 col-lg-6 card-text">
-                                        <a href="{{site.baseurl}}/test2.html">
-                                        <div class="content-wrapper">
-                                                <h3>UX Research, Storyboarding and Hypothesis Validation</h3>
-                                                <small>Read More</small>
-                                        </div>
-                                        </a>
-                                        
-                                </div>
-                                <div class="col-xs-12 col-md-6 col-lg-6 card-text">
-                                        <a href="{{site.baseurl}}/test2.html">
-                                        <div  class="content-wrapper">
-                                                <h3>Design Systems, Styleguides and Components Library</h3>
-                                                <small>Read More</small>
-                                        </div>
-                                        </a>
-                                        
-                                </div>
-                                <div class="col-xs-12 col-md-6 col-lg-6 card-text">
-                                        <a href="{{site.baseurl}}/test2.html">
-                                        <div  class="content-wrapper">
-                                                <h3>Digital Prototyping Toolkit</h3>
-                                                <small>Read More</small>
-                                        </div>
-                                        </a>
-                                        
-                                </div>
-                                        <div class="col-xs-12 col-md-6 col-lg-6 card-text">
-                                        <a href="{{site.baseurl}}/test2.html">
-                                        <div  class="content-wrapper">
-                                                <h3>Whiteboarding, Sketching and Visual Note taking</h3>
-                                                <small>Read More</small>
-                                        </div>
-                                        </a>
-                                        
-                                </div>
-                                <div class="col-xs-12 col-md-6 col-lg-6 card-text">
-                                        <a href="{{site.baseurl}}/test2.html">
-                                        <div  class="content-wrapper">
-                                                <h3>Strategy Design and Creative Problem Solving  Methods</h3>
-                                                <small>Read More</small>
-                                        </div>
-                                        </a>
-                                        
-                                </div>
-                                
-                                <div class="more-projects" style="text-align:center;margin:3rem 0 4rem; width:100%">
-                                <a href="http://work.diogorusso.com/" class="button">explore all projects</a>
-                                </div>    
-                                
-                </div>
-        </section>
+<div class="box">
+        <div class="portfolio-title" style="margin-top:3rem;">
+                <h2>Random Shots</h2>
+                {% comment %} <h3> Strategy Design ・ Creative Direction ・ Artwork</h3> {% endcomment %}
+        </div>
+        <div class="row">
+                {% for post in site.posts limit:6  %}
+                  <div class="col-xs-12 col-sm-4 card-wrap">
+                  <article class="portfolio-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="{{site.baseurl}}{{post.url}}" target="_blank" rel="noopener">
+                      <div class="card-img card-img-shadow ratio1-1">
+                          {% assign images = post.content | split:"<img " %}
+                    {% for image in images %}
+                      {% if image contains 'src=' %}
+                        {% assign imageMarkup = image | split:">" | first %}
+                        <img class="img-content" style="width:auto;height:auto;min-height:100%; min-width:100%;max-height:100%" {{ imageMarkup }}>
+                        {% break %}
+                      {% endif %}
+                  {% endfor %}
+                <noscript><img class="img-content" src="{{include.image}}" alt="{{ site.tile }} {{ include.title }} {{ include.category }}"></noscript>
+            </div>
+            <div class="content">
+              <small>{{post.tags}}</small>
+              <h3>{{post.title}}</h3>
+            </div>
+          </a>
+        </article>
+        </div>
+      {% endfor %}
+        </div>
+        
+        <div class="more-projects" style="text-align:center;margin:1rem 0 4rem;">
+                <a href="http://work.diogorusso.com/" class="button">explore all projects</a>
+        </div>
+        
 </div>

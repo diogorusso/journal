@@ -4,3 +4,8 @@ cdn: /journal/assets/cdn/
 static: /journal/assets/cdn
 theme: "diogorusso.jekyll.theme"
 remote_theme: ''
+
+jekyll_get:
+  - data: behance
+    json: 'https://api.behance.net/v2/users/diogorusso/projects/?api_key=gOG4dIZp8vtdneDwUqk6pJJ7VB7PgHDb'
+    # cache: true

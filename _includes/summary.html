@@ -1,0 +1,62 @@
+
+<div class="projects-climate">
+        {% capture img_rx %}
+                {{ site.cdn }}{{ include.version }}/notes.jpg
+        {% endcapture %}
+        {% include components/card/large.html 
+                url="https://work.diogorusso.com/data-driven-fertility-prescriptions" 
+                title="Strategy Design Toolkit"
+                categories="UX + Product Design"
+                buttonLabel="Read Case"  
+                img=img_rx 
+        %}
+        {% capture img_sync %}
+                {{ site.cdn }}{{ include.version }}ui.jpg
+        {% endcapture %}
+        {% include components/card/large.html 
+                img=img_sync
+                url="https://work.diogorusso.com/data-mule-for-large-farming-operations" 
+                title="UI Prototyping Experiments"
+                buttonLabel="Read Case"
+                categories="SwiftUI, FramerX, Figma, Adobe XD, Sketch" 
+        %}{% capture img_sa %}
+         {{ site.cdn }}{{ include.version }}greenlid.jpg
+        {% endcapture %}
+        {% include components/card/large.html
+                img=img_sa
+                url="https://work.diogorusso.com/predictive-seed-placement-recommendations" 
+                title="Creative Notes, Sketches + Doodles"
+                buttonLabel="Read Case"
+                categories="Digital Sketchbook"
+        %}
+        {% comment %} {% capture img_dmba %}
+                {{ site.cdn }}{{ include.version }}featured/cca_dmba-4.jpg
+        {% endcapture %}
+        {% include components/card/large.html 
+                url="https://work.diogorusso.com/design-strategy" 
+                title="MBA Design Strategy at California College of the Arts"
+                categories="Design Thinking & Research"
+                buttonLabel="View Projects" 
+                img=img_dmba 
+        %}
+        {% capture img_creative_dir %}
+                {{ site.cdn }}{{ include.version }}featured/br.jpg
+        {% endcapture %}
+        {% include components/card/large.html
+                url="https://work.diogorusso.com/creative-direction" 
+                title="Graphics, Interaction & Motion Design"
+                categories="Creative Direction"
+                buttonLabel="View Projects"
+                img=img_creative_dir 
+        %}
+        {% capture img_kenner %}
+          {{ site.cdn }}{{ include.version }}featured/art.jpg
+        {% endcapture %}
+        {% include components/card/large.html 
+                url="https://work.diogorusso.com/illustration-art" 
+                title="Illustration & Art" 
+                categories="Events + Gallery"
+                buttonLabel="View Projects" 
+                img=img_kenner
+        %} {% endcomment %}
+</div>

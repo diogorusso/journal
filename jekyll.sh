@@ -1,1 +1,1 @@
-BUNDLE_GEMFILE=Gemfile.local bundle exec jekyll serve --host=localhost --port=4001 --config "_config.yml,_config.dev.yml"
+BUNDLE_GEMFILE=Gemfile.local bundle exec jekyll serve --host=localhost --port=4001 --config "_config.yml,_config.dev.yml" --limit_posts 999

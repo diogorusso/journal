@@ -19,7 +19,9 @@ sidebar_items:
     url: "hello"
   - title: "Learn"
     url: "hello"
-  - title: "Lab"
+  - title: "Projects"
+    url: "hello"
+  - title: "Essays"
     url: "hello"
 
 # Info

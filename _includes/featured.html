@@ -1,0 +1,45 @@
+<div class="box" style="margin-top:6rem;">
+
+        <div class="row">
+                {% capture img_foodtopia %}
+                  {{ site.cdn }}{{ include.version }}sec1.jpg
+                {% endcapture %}
+                {% include components/card/portfolio.html 
+                        url="https://work.diogorusso.com/launchpad" 
+                        title="Ideas" 
+                        categories="Notes, Shots + Inspiration" 
+                        img=img_foodtopia 
+                %}
+                {% capture img_kenner %}
+                  {{ site.cdn }}{{ include.version }}sec2.jpg
+                {% endcapture %}
+                {% include components/card/portfolio.html 
+                        url="https://work.diogorusso.com/bike-share-market-insights" 
+                        title="Learn" 
+                        categories="Design, Code & Resources" 
+                        img=img_kenner
+                %}
+                {% capture img_foodtopia %}
+                  {{ site.cdn }}{{ include.version }}sec3.jpg
+                {% endcapture %}
+                {% include components/card/portfolio.html 
+                        url="https://work.diogorusso.com/escola-sesc-id" 
+                        title="Work" 
+                        categories="Insights + Process" 
+                        img=img_foodtopia 
+                %}
+                {% capture img_kenner %}
+                  {{ site.cdn }}{{ include.version }}sec4.jpg
+                {% endcapture %}
+                {% include components/card/portfolio.html 
+                        url="https://work.diogorusso.com/illustration-art" 
+                        title="Essays" 
+                        categories="Design + Strategy" 
+                        img=img_kenner
+                %}
+                
+                
+        </div>
+       
+        
+</div>
