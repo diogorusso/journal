@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head/_main.html %}
+  <body>
+    {% include components/nav/nav.html %}
+    <main>
+        {{ content}}
+    </main>
+    {% include components/footer/footer.html %}
+	<style>
+		{% capture include_to_scssify %}
+		{% include main.scss %}
+		{% endcapture %}
+		{{ include_to_scssify | scssify }}
+	</style>  
+  <script src="{{ site.baseurl }}/assets/js/main.js" defer></script>
+  <script src="{{ site.baseurl }}/assets/js/about.js" defer></script>
+  {% if page.scripts contains 'masonry' %}
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js" defer></script>
+    <script src="{{site.baseurl}}/assets/masonry_init.js" defer></script>
+
+  {% endif %}
+  {% if page.scripts contains 'instagram' %}
+    <script src="{{ site.baseurl }}/assets/js/instagram.js" defer></script>
+  {% endif %}
+  {% if page.scripts contains 'behance' %}
+    <script src="{{ site.baseurl }}/assets/js/behance.js" defer></script>
+  {% endif %}
+  {% if page.scripts contains 'animation' %}
+    <script src="{{ site.baseurl }}/assets/js/animation.js" defer></script>
+  {% endif %}
+  <script src="{{ site.baseurl }}/assets/js/ga.js" defer></script>
+  </body>
+</html>
+
+

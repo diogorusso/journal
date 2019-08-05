@@ -1,0 +1,17 @@
+
+
+<article class="col-xs-12 col-md-6 col-lg-4 course {{include.class}}" style="width:100%; margin-bottom:3rem">
+    <div class="card">
+        <a href="{{ include.url }}" target="_blank" rel="noopener">
+            
+                <img src="{{include.img}}" alt="{{ site.tile }} {{ include.title }} {{ include.categories }}">
+            
+            <div class="content">
+                <h3>{{ include.title }}</h3>
+                <p>
+                    {{ include.categories }}
+                </p>
+            </div>
+        </a>
+    </div>
+</article>
