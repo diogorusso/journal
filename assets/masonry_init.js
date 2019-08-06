@@ -6,7 +6,8 @@ jQuery(document).ready(function ($) {
         itemSelector: ".course",
         percentPosition: true,
         masonry: {
-            columnWidth: '.grid-sizer'
+            columnWidth: '.grid-sizer',
+            gutter: '.gutter-sizer'
         },
         getSortData: {
             name: "h2"

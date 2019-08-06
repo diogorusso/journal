@@ -2,7 +2,48 @@
 layout: masonry
 scripts: "masonry"
 ---
-        <main class="main-area" style="margin-top:6rem;">
+
+<style>
+
+.course {
+  float: left;
+}
+.gutter-sizer { width: 1rem; }
+.grid-sizer,
+.course { width: calc(33% - 1rem); margin-bottom:3rem; }
+
+@media (min-width: 960px) and (max-width: 1200px) {
+    .grid-sizer,
+    .course { width: calc(33% - 1rem); }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+    .grid-sizer,
+    .course { width: calc(50% - 1rem); }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .grid-sizer,
+    .course { width: calc(50% - 1rem); }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+    .grid-sizer,
+    .course { width: 100%; }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .grid-sizer,
+    .course { width: 100%; }
+}
+
+@media (max-width: 319px) {
+    .grid-sizer,
+    .course { width: 100%; }
+}
+
+</style>
+        <div class="main-area" style="margin-top:6rem;">
                 <div style="position:fixed; top:6rem;left:0;width:20%;z-index:9">
                         <nav id="filter" class="filters">
                         <ul class="global-controls">
@@ -45,8 +86,9 @@ scripts: "masonry"
                         </ul>
                         </nav><!-- .filters -->
                 </div>
-                <div class="row row-no-gutter courses" style="margin-left:20%;">
-                                <div class="grid-sizer col-xs-12 col-md-6 col-lg-4"></div>
+                <div class="courses" style="margin-left:20%;">
+                                <div class="grid-sizer"></div>
+                                <div class="gutter-sizer"></div>
                                 {% capture img_foodtopia %}
                                         {{site.baseurl}}/tumblr_files/tumblr_kxqvbcQjpj1qammdvo1_400.jpg
                                 {% endcapture %}
@@ -109,4 +151,4 @@ scripts: "masonry"
                                 %}
                 </div>
                 
-        </main>
+        </div>
