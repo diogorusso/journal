@@ -3,6 +3,7 @@ jQuery(document).ready(function ($) {
     // Filter isotope
     $container.isotope({
         // options
+        isInitLayout: false,
         itemSelector: ".course",
         percentPosition: true,
         masonry: {

@@ -2,11 +2,14 @@
 <html lang="en">
   {% include head/_main.html %}
   <body>
-    {% include components/nav/nav.html %}
-    <main>
-        {{ content}}
-    </main>
-    {% include components/footer/footer.html %}
+    {% include components/nav/nav-resp.html %}
+      <div class="sidebar">
+        {% include sidebar.html %}
+        <main class="main">
+            {{ content}}
+            {% include components/footer/footer.html %}
+        </main>
+      </div>
 	<style>
 		{% capture include_to_scssify %}
 		{% include main.scss %}
