@@ -4,8 +4,11 @@
                 {% capture img_foodtopia %}
                   {{ site.cdn }}{{ include.version }}sec1.jpg
                 {% endcapture %}
+                {% capture url_foodtopia %}
+                  {{ site.baseurl }}/masonry.html
+                {% endcapture %}
                 {% include components/card/portfolio.html 
-                        url="https://work.diogorusso.com/launchpad" 
+                        url=url_foodtopia 
                         title="Ideas" 
                         categories="Notes, Shots + Inspiration" 
                         img=img_foodtopia 

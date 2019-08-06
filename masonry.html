@@ -14,7 +14,7 @@ scripts: "masonry"
 
 @media (min-width: 960px) and (max-width: 1200px) {
     .grid-sizer,
-    .course { width: calc(33% - 1rem); }
+    .course { width: calc(50% - 1rem); }
 }
 
 @media (min-width: 768px) and (max-width: 959px) {
@@ -47,7 +47,23 @@ scripts: "masonry"
                 <div class="courses" style="margin-top:6rem;" >
                                 <div class="grid-sizer"></div>
                                 <div class="gutter-sizer"></div>
-                                {% capture img_foodtopia %}
+                                {% for post in site.posts limit:99  %}
+                                        
+                                        {% capture img_foodtopia %}
+                                                {{site.baseurl}}/tumblr_files/tumblr_kxqvbcQjpj1qammdvo1_400.jpg
+                                        {% endcapture %}
+                                        {% capture url_foodtopia %}
+                                                {{site.baseurl}}/{{post.url}}
+                                        {% endcapture %}
+                                        {% include card_masonry.html 
+                                                url=url_foodtopia
+                                                class="full-stack ray" 
+                                                title=post.title 
+                                                categories=post.tags 
+                                                img=img_foodtopia 
+                                        %}
+                                {% endfor %}
+                                {% comment %} {% capture img_foodtopia %}
                                         {{site.baseurl}}/tumblr_files/tumblr_kxqvbcQjpj1qammdvo1_400.jpg
                                 {% endcapture %}
                                 {% include card_masonry.html 
@@ -106,6 +122,6 @@ scripts: "masonry"
                                         title="f Becoming a Web Developer: Full Stack vs. Front End" 
                                         categories="Joe" 
                                         img=img_foodtopia 
-                                %}
+                                %} {% endcomment %}
                 </div>
      

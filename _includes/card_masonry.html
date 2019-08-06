@@ -1,7 +1,15 @@
 <article class="course {{include.class}}">
     <div class="card">
         <a href="{{ include.url }}" target="_blank" rel="noopener">
-            <img src="{{include.img}}" alt="{{ site.tile }} {{ include.title }} {{ include.category }}">
+            {% assign images = post.content | split:"<img " %}
+            {% for image in images %}
+                {% if image contains 'src=' %}
+                        {% assign imageMarkup = image | split:">" | first %}
+                        <img {{ imageMarkup }}>
+                        {% break %}
+                {% endif %}
+            {% endfor %}
+            {% comment %} <img src="{{include.img}}" alt="{{ site.tile }} {{ include.title }} {{ include.category }}"> {% endcomment %}
             {% comment %} <img src="{% include img/base64/transparent.html %}" data-src="{{include.img}}" alt="{{ site.tile }} {{ include.title }} {{ include.category }}"> {% endcomment %}
             <div class="content">
                 <h3>{{ include.title }}</h3>
