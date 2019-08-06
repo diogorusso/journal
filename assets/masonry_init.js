@@ -131,9 +131,6 @@ jQuery(document).ready(function ($) {
     // When the page loads for the first time, run onHashChange
     onHashChange();
     console.log("hello masonry")
-
-    $.lazyLoadXT.updateEvent+=' layoutComplete'
-
     });
 
     
