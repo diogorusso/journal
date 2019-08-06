@@ -1,8 +1,8 @@
 <article class="course {{include.class}}">
     <div class="card">
         <a href="{{ include.url }}" target="_blank" rel="noopener">
-            <img src="{{include.img}}" alt="{{ site.tile }} {{ include.title }} {{ include.category }}">
-            {% comment %} <img src="{% include img/base64/transparent.html %}" data-src="{{include.img}}" alt="{{ site.tile }} {{ include.title }} {{ include.category }}"> {% endcomment %}
+            <img src="{% include img/base64/transparent.html %}" data-src="{{include.img}}" alt="{{ site.tile }} {{ include.title }} {{ include.category }}">
+            
             <div class="content">
                 <h3>{{ include.title }}</h3>
                 <p>{{ include.categories }}</p>
