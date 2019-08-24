@@ -1,15 +1,21 @@
 
 <div class="projects-climate">
+        {% capture url_foodtopia %}
+                {{ site.baseurl }}/lab/ux-toolkit
+        {% endcapture %}
         {% capture img_rx %}
                 {{ site.cdn }}{{ include.version }}/notes.jpg
         {% endcapture %}
         {% include components/card/large.html 
-                url="https://work.diogorusso.com/data-driven-fertility-prescriptions" 
+                url=url_foodtopia 
                 title="Strategy Design Toolkit"
                 categories="UX + Product Design"
                 buttonLabel="Read Case"  
                 img=img_rx 
         %}
+        {% capture url_foodtopia %}
+                {{ site.baseurl }}/lab/prototyping
+        {% endcapture %}
         {% capture img_sync %}
                 {{ site.cdn }}{{ include.version }}ui.jpg
         {% endcapture %}
@@ -18,8 +24,12 @@
                 url="https://work.diogorusso.com/data-mule-for-large-farming-operations" 
                 title="UI Prototyping Experiments"
                 buttonLabel="Read Case"
-                categories="SwiftUI, FramerX, Figma, Adobe XD, Sketch" 
-        %}{% capture img_sa %}
+                categories="Collection of Shots + Resources" 
+        %}
+        {% capture url_foodtopia %}
+                {{ site.baseurl }}/lab/ux-toolkit
+        {% endcapture %}
+        {% capture img_sa %}
          {{ site.cdn }}{{ include.version }}greenlid.jpg
         {% endcapture %}
         {% include components/card/large.html

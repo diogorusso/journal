@@ -1,51 +1,19 @@
----
-layout: masonry
-scripts: "masonry"
----
 
-<style>
-
-.course {
-  float: left;
-}
-.gutter-sizer { width: 1rem; }
-.grid-sizer,
-.course { width: calc(33% - 1rem); margin-bottom:3rem; }
-
-@media (min-width: 960px) and (max-width: 1200px) {
-    .grid-sizer,
-    .course { width: calc(50% - 1rem); }
-}
-
-@media (min-width: 768px) and (max-width: 959px) {
-    .grid-sizer,
-    .course { width: calc(50% - 1rem); }
-}
-
-@media (min-width: 600px) and (max-width: 767px) {
-    .grid-sizer,
-    .course { width: calc(50% - 1rem); }
-}
-
-@media (min-width: 480px) and (max-width: 599px) {
-    .grid-sizer,
-    .course { width: 100%; }
-}
-
-@media (min-width: 320px) and (max-width: 479px) {
-    .grid-sizer,
-    .course { width: 100%; }
-}
-
-@media (max-width: 319px) {
-    .grid-sizer,
-    .course { width: 100%; }
-}
-
-</style>
        
-                <div class="courses" style="margin-top:6rem;" >
-                                <div class="grid-sizer"></div>
+                <div class="isotope" style="margin-top:6rem;" data-isotope='{ 
+                                "itemSelector": ".grid-item-{{include.col}}",
+                                "percentPosition": "true",
+                                "masonry": {
+                                        "columnWidth": ".grid-sizer-{{include.col}}",
+                                        "gutter": ".gutter-sizer"
+                                },
+                                "getSortData": {
+                                        "name": "h2"
+                                }
+                        }' 
+                        
+                >
+                                <div class="grid-sizer-{{include.col}}"></div>
                                 <div class="gutter-sizer"></div>
                                 {% for post in site.posts limit:99  %}
                                         
@@ -55,11 +23,14 @@ scripts: "masonry"
                                         {% capture url_foodtopia %}
                                                 {{site.baseurl}}/{{post.url}}
                                         {% endcapture %}
-                                        {% include card_masonry.html 
+                                        {% capture classes %}
+                                         grid-item-{{include.col}} {% cycle 'note','shot','inspiration' %} {% cycle 'diogo','guest' %}
+                                        {% endcapture %}
+                                        {% include card_masonry.html
                                                 url=url_foodtopia
-                                                class="full-stack ray" 
+                                                class=classes
                                                 title=post.title 
-                                                categories=post.tags 
+                                                categories=post.categories
                                                 img=img_foodtopia 
                                         %}
                                 {% endfor %}
@@ -124,4 +95,3 @@ scripts: "masonry"
                                         img=img_foodtopia 
                                 %} {% endcomment %}
                 </div>
-     

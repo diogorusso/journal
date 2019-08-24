@@ -32,9 +32,29 @@ title: Journal
 {% include featured.html %}
 {% comment %} {% include posts.html %} {% endcomment %}
 
-
-
-
+<div class="row box">
+{% for post in site.posts limit:6  %}
+                                        
+        {% capture img_foodtopia %}
+                {{site.baseurl}}/tumblr_files/tumblr_kxqvbcQjpj1qammdvo1_400.jpg
+        {% endcapture %}
+        {% capture url_foodtopia %}
+                {{site.baseurl}}/{{post.url}}
+        {% endcapture %}
+        {% capture classes %}
+                grid-item-{{include.col}} {% cycle 'note','shot','inspiration' %} {% cycle 'diogo','guest' %}
+        {% endcapture %}
+        <div class="col-xs-6 col-md-6 col-lg-4" style="margin-bottom:3rem;">
+        {% include card_masonry.html
+                url=url_foodtopia
+                class=classes
+                title=post.title 
+                categories=post.categories
+                img=img_foodtopia 
+        %}
+        </div>
+{% endfor %}
+</div>
 
 
 

@@ -1,19 +1,27 @@
-<article class="course {{include.class}}">
-    <div class="card">
+<article class="{{include.class}}">
+    <div class="card" style="max-height: 420px;min-height: 460px;overflow: hidden;padding:1.5rem;">
         <a href="{{ include.url }}" target="_blank" rel="noopener">
-            {% assign images = post.content | split:"<img " %}
-            {% for image in images %}
-                {% if image contains 'src=' %}
-                        {% assign imageMarkup = image | split:">" | first %}
-                        <img {{ imageMarkup }}>
-                        {% break %}
-                {% endif %}
-            {% endfor %}
-            {% comment %} <img src="{{include.img}}" alt="{{ site.tile }} {{ include.title }} {{ include.category }}"> {% endcomment %}
-            {% comment %} <img src="{% include img/base64/transparent.html %}" data-src="{{include.img}}" alt="{{ site.tile }} {{ include.title }} {{ include.category }}"> {% endcomment %}
-            <div class="content">
-                <h3>{{ include.title }}</h3>
-                <p>{{ include.categories }}</p>
+            {% comment %} <div class="content" style="width:100%;background:#fbfbfb;padding-bottom:1.5rem;">
+                
+                <h3 style="font-size:1.35rem;">{{ include.title }}</h3>
+            </div> {% endcomment %}
+                <div style="min-width:100%">
+                {% assign images = post.content | split:"<img " %}
+                {% for image in images %}
+                    {% if image contains 'src=' %}
+                            {% assign imageMarkup = image | split:">" | first %}
+                            {% comment %} <img {{ imageMarkup }} style="max-height:360px; width:auto;margin:auto;max-width:100%;box-shadow: 0 2px 10px rgba(20, 20, 20, 0.2);" > {% endcomment %}
+                            <img {{ imageMarkup }} style="max-height:320px; width:auto;margin:auto;max-width:100%;" >
+                            {% break %}
+                    {% endif %}
+                {% endfor %}
+                {% comment %} <img src="{{include.img}}" alt="{{ site.tile }} {{ include.title }} {{ include.category }}"> {% endcomment %}
+                {% comment %} <img src="{% include img/base64/transparent.html %}" data-src="{{include.img}}" alt="{{ site.tile }} {{ include.title }} {{ include.category }}"> {% endcomment %}
+                <div class="content" style="padding: 1rem 0;">
+                    
+                    <h3 class="weight-400" style="font-size:1.2rem;margin:1rem 0 ;">{{ include.title }}</h3>
+                    {% comment %} <p>{{ include.categories }}</p> {% endcomment %}
+                </div>
             </div>
         </a>
     </div>

@@ -5,7 +5,7 @@
                   {{ site.cdn }}{{ include.version }}sec1.jpg
                 {% endcapture %}
                 {% capture url_foodtopia %}
-                  {{ site.baseurl }}/masonry.html
+                  {{ site.baseurl }}/ideas
                 {% endcapture %}
                 {% include components/card/portfolio.html 
                         url=url_foodtopia 
@@ -16,26 +16,35 @@
                 {% capture img_kenner %}
                   {{ site.cdn }}{{ include.version }}sec2.jpg
                 {% endcapture %}
+                {% capture url_kenner %}
+                  {{ site.baseurl }}/learn
+                {% endcapture %}
                 {% include components/card/portfolio.html 
-                        url="https://work.diogorusso.com/bike-share-market-insights" 
+                        url=url_kenner 
                         title="Learn" 
-                        categories="Design, Code & Resources" 
+                        categories="Strategy, Design & Dev" 
                         img=img_kenner
                 %}
+                {% capture url_foodtopia %}
+                  {{ site.baseurl }}/lab
+                {% endcapture %}
                 {% capture img_foodtopia %}
                   {{ site.cdn }}{{ include.version }}sec3.jpg
                 {% endcapture %}
                 {% include components/card/portfolio.html 
-                        url="https://work.diogorusso.com/escola-sesc-id" 
-                        title="Work" 
-                        categories="Insights + Process" 
+                        url=url_foodtopia 
+                        title="Lab" 
+                        categories="Projects + Experiments" 
                         img=img_foodtopia 
                 %}
+                {% capture url_kenner %}
+                  {{ site.baseurl }}/essays/
+                {% endcapture %}
                 {% capture img_kenner %}
                   {{ site.cdn }}{{ include.version }}sec4.jpg
                 {% endcapture %}
                 {% include components/card/portfolio.html 
-                        url="https://work.diogorusso.com/illustration-art" 
+                        url=url_kenner 
                         title="Essays" 
                         categories="Design + Strategy" 
                         img=img_kenner
